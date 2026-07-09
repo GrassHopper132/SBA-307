@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div>
+        <header>
+            <h1 id="multi-bg-page">Home Page</h1>
+            <nav class="navbar">
+                <a href="index.html" class="nav-item">Home</a>
+                <a href="power.html" class="nav-item">Power</a>
+                <a href="wire.html" class="nav-item">The Wire</a>
+            </nav>
+        </header>
+
+        <img id="rotator" src="images/power1.jpg" alt="Description of the first image" width="500" height="500">
+
+        <script>
+            
+            const images = [
+                { src: "images/power1.jpg", alt: "Power Era" },
+                { src: "images/the wire.jpg", alt: "The Wire Era" }, 
+                { src: "images/the wire 2.jpg", alt: "The Wire Era" },
+                { src: "images/power2.jpg", alt: "Power Era" },
+                { src: "images/power3.jpg", alt: "Power Era" },
+                { src: "images/the wire 3.jpg", alt: "The Wire Era" }
+
+            ];
+
+            let currentIndex = 0;
+            const imgElement = document.getElementById("rotator"); // Matches the ID exactly
+
+            images.forEach(data => {
+                const img = new Image();
+                img.src = data.src;
+            });
+
+            function rotateImage() {
+                currentIndex = (currentIndex + 1) % images.length;
+                imgElement.src = images[currentIndex].src;
+                imgElement.alt = images[currentIndex].alt;
+            }
+            document.addEventListener("DOMContentLoaded", () => {
+                setInterval(rotateImage, 3000);
+            });
+        </script>
+    </div>
+
+    <section class="page-content">
+        <h1>Which Era Are You Choosing?</h1>
+        <div class="main-hero">
+            <p>Either Way You're Gonna Get Paid In Blood!</p>
+        </div>
+
+        <div class="style">
+            <button id="hero-btn" class="styled-btn">Make Your Choice</button>
+        </div>
+    </section>
+
+    <div>
+        <footer>
+            <p>&copy; 2026 For the Love of The Money</p>
+        </footer>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

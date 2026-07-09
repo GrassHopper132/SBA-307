@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+
+body {
+    font-family: 'Oswald', sans-serif;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #ffcc00;
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 30px 0 15px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+ul,
+ol {
+    margin: 0 0 20px 40px;
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+span {
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+
+.styled-btn {
+    background-color: transparent;
+    color: #ffcc00;
+    padding: 12px 24px;
+    margin: 10px 5px 20px 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 2px solid #ffcc00;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+.styled-btn:hover {
+    background-color: #ffcc00;
+    color: #000;
+    transform: translateY(-4px);
+    box-shadow: 0 4px 10px rgba(255, 204, 0, 0.4);
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-top: 3px solid #ffcc00;
+}
+
+style {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.styled-btn {
+    padding: 12px 24px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+body {
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/money-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white; 
+    margin: 0; 
+}
+.dark-theme {
+    background-image: none;
+    background-color: #2b0000;
+}
