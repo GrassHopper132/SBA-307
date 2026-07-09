@@ -96,3 +96,13 @@ body {
     background-image: none;
     background-color: #2b0000;
 }
+.kanan-banner {
+  background-image: url('background.gif');
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+.gif-container {
+  display: flex;
+  justify-content: flex-start; 
+}
+}
